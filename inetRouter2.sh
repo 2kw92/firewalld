@@ -14,4 +14,3 @@ service iptables save
 echo "DEFROUTE=no" >> /etc/sysconfig/network-scripts/ifcfg-eth0
 echo "GATEWAY=192.168.255.1" >> /etc/sysconfig/network-scripts/ifcfg-eth1
 echo "192.168.0.0/16 via 192.168.255.3 dev eth1" > /etc/sysconfig/network-scripts/route-eth1
-reboot
